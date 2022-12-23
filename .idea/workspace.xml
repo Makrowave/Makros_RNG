@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5476ac9f-70ef-44f8-91ea-6342c1e9c8f9" name="Changes" comment="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable" />
+    <list default="true" id="5476ac9f-70ef-44f8-91ea-6342c1e9c8f9" name="Changes" comment="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makrowave/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makrowave/ButtonPanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,19 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1671650485369</updated>
       <workItem from="1671650486539" duration="1771000" />
-      <workItem from="1671737263050" duration="11487000" />
+      <workItem from="1671737263050" duration="12724000" />
+      <workItem from="1671753823386" duration="645000" />
+      <workItem from="1671799330095" duration="3390000" />
     </task>
     <task id="LOCAL-00001" summary="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
       <created>1671751946848</created>
@@ -69,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671751946848</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
+      <created>1671752230497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671752230497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

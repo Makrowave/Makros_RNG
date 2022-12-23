@@ -20,60 +20,65 @@ public class ApplicationFrame extends JFrame implements ActionListener {
     JTextField addField;
     JButton generateButton;
 
-    JTextField outputField;
+    JTextArea outputField;
     ApplicationFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
 
-        generateButton = new JButton("Generate");
-
+        JPanel fields = new JPanel();
+        fields.setLayout(new GridLayout(0, 3));
+        //TEXT FIELDS FOR ARGS
+        //MINIMUM VALUE
         minField = new JTextField();
         minField.setPreferredSize(new Dimension(100, 40));
         minField.setText("0");
         JPanel minPanel = new ButtonPanel(new JLabel("Minimum Value"), minField);
-        this.add(minPanel);
-
+        fields.add(minPanel);
+        //MAXIMUM VALUE
         maxField = new JTextField();
         maxField.setPreferredSize(new Dimension(100, 40));
         maxField.setText("100");
         JPanel maxPanel = new ButtonPanel(new JLabel("Maximum Value"), maxField);
-        this.add(maxPanel);
-
+        fields.add(maxPanel);
+        //STEP VALUE - subject to change
         stepField = new JTextField();
         stepField.setPreferredSize(new Dimension(100, 40));
         stepField.setText("1");
         JPanel stepPanel = new ButtonPanel(new JLabel("Step"), stepField);
-        this.add(stepPanel);
-
+        fields.add(stepPanel);
+        //QUANTITY OF NUMBERS
         quantityField = new JTextField();
         quantityField.setPreferredSize(new Dimension(100, 40));
         quantityField.setText("1");
         JPanel quantityPanel = new ButtonPanel(new JLabel("Quantity"), quantityField);
-        this.add(quantityPanel);
-
+        fields.add(quantityPanel);
+        //NUMBER ADDED TO RESULT
         addField = new JTextField();
         addField.setPreferredSize(new Dimension(100, 40));
         addField.setText("0");
         JPanel addPanel = new ButtonPanel(new JLabel("Add number to the result"), addField);
-        this.add(addPanel);
+        fields.add(addPanel);
 
-        generateButton = new JButton();
+        this.add(fields);
+
+        generateButton = new JButton("Generate!");
         generateButton.setSize(200, 100);
-        generateButton.setText("Generate!");
         generateButton.addActionListener(this);
         this.add(generateButton);
 
-        outputField = new JTextField();
+        outputField = new JTextArea();
         outputField.setPreferredSize(new Dimension(1000, 400));
         outputField.setText("result");
         outputField.setEditable(false);
+        outputField.setLineWrap(true);
         this.add(outputField);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==generateButton){
-            //Checking if text fields contain something
+            //Checking if text fields contain anything - probably will change to try catch
             if (!(minField.getText().equals("") ||
             maxField.getText().equals("") ||
             stepField.getText().equals("") ||
@@ -86,7 +91,7 @@ public class ApplicationFrame extends JFrame implements ActionListener {
                         parseInt(stepField.getText()), false,
                         false, parseInt(quantityField.getText()),
                         parseInt(addField.getText()), false);
-                StringJoiner output = new StringJoiner(", ");
+                StringJoiner output = new StringJoiner(" ");
                 for (Integer number : result) {
                     output.add(number.toString());
                 }
