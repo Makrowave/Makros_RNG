@@ -5,5 +5,6 @@ public class Main {
         JFrame frame = new ApplicationFrame();
         frame.setVisible(true);
         frame.pack();
+        frame.setResizable(false);
     }
 }

@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5476ac9f-70ef-44f8-91ea-6342c1e9c8f9" name="Changes" comment="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
+    <list default="true" id="5476ac9f-70ef-44f8-91ea-6342c1e9c8f9" name="Changes" comment="Made app frame prettier&#10;&#10;To do:&#10;Make app frame pretty&#10;-background&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
+      <change afterPath="$PROJECT_DIR$/src/com/makrowave/util/MakroColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makrowave/util/TogglableButtonGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makrowave/util/ValueTextField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makrowave/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makrowave/ButtonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makrowave/ButtonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makrowave/util/TextFieldPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makrowave/RandomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makrowave/util/RandomGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +34,14 @@
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/java/awt/Component.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/java/awt/Container.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/ButtonGroup.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JCheckBox.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JLabel.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JPanel.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JRadioButton.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JTextField.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../Programy/Oracle/Java/JDK18/lib/src.zip!/java.desktop/javax/swing/JToggleButton.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,7 +76,7 @@
       <workItem from="1671650486539" duration="1771000" />
       <workItem from="1671737263050" duration="12724000" />
       <workItem from="1671753823386" duration="645000" />
-      <workItem from="1671799330095" duration="3390000" />
+      <workItem from="1671799330095" duration="30747000" />
     </task>
     <task id="LOCAL-00001" summary="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
       <created>1671751946848</created>
@@ -82,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671752230497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made app frame prettier&#10;&#10;To do:&#10;Make app frame pretty&#10;-background&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable">
+      <created>1671802887487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671802887487</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable" />
-    <option name="LAST_COMMIT_MESSAGE" value="App frame&#10;RandomGenerator&#10;Button&#10;&#10;To do:&#10;Make app frame pretty&#10;-backgroud&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable" />
+    <MESSAGE value="Made app frame prettier&#10;&#10;To do:&#10;Make app frame pretty&#10;-background&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made app frame prettier&#10;&#10;To do:&#10;Make app frame pretty&#10;-background&#10;-text columns and slider for result&#10;Check for letters in fields&#10;Checkboxes&#10;-try to make a checkbox for even to be disabled when odd is selected and vice versa&#10;Real number generator&#10;Fix modulo for negative numbers&#10;(Optional) Introduce: divisible by or modify step to work the same if checked&#10;-might do it by 2 checkboxes which disable each other on click&#10;&#10;Future plans:&#10;Make components scalable" />
   </component>
 </project>
